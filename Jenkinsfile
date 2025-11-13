@@ -21,10 +21,10 @@ pipeline {
 
         stage('Run Tests') {
             steps {
-                sh '''
-            source venv/bin/activate
-            pytest
-        '''
+                sh '''#!/bin/bash
+        source venv/bin/activate
+        pytest
+         '''
             }
         }
 
